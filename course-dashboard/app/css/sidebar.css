@@ -7,17 +7,17 @@
 }
 
 .logo {
-    margin-left: 58px;
+    margin-left: 25%;
     margin-top: 44px;
     margin-bottom: 25%;
 }
 
 .girlImg {
     width: 137px;
-    height: 160px;
+    height: 155px;
     margin-left: 42px;
-    margin-top: 28px;
-    margin-bottom: 27px;
+    margin-top: 33px;
+    margin-bottom: 30px;
 }
 
 a {
@@ -68,4 +68,24 @@ a:hover {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+    margin-top: 10px;
+}
+
+.arrowBox {
+    position: relative;
+    border: 1px solid #369FFF;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.arrowBox:hover{
+    background-color: #8ac4fa;
+}
+
+.arrow {
+    position: absolute;
+    top: 28%;
 }
