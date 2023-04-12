@@ -1,0 +1,10 @@
+.container_main{
+    width: 32%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 2px solid #F0F0F0; 
+    height: 100vh;   
+    padding-left: 2.5%;
+    padding-top: 3%;
+}

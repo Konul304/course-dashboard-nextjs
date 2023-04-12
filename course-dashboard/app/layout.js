@@ -1,4 +1,5 @@
 import './globals.css'
+import RightMenu from './rightMenu'
 import Sidebar from './sidebar'
 
 export default function RootLayout({ children }) {
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
+      <RightMenu/>
       <Sidebar/>
         <div>{children}</div>
       </body>
