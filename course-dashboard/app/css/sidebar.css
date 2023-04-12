@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+.sidebar {
+    width: 15.5%;
+    border-right: 2px solid #F0F0F0;
+    height: 100vh;
+}
+
+.logo {
+    margin-left: 58px;
+    margin-top: 44px;
+    margin-bottom: 25%;
+}
+
+.girlImg {
+    width: 137px;
+    height: 160px;
+    margin-left: 42px;
+    margin-top: 28px;
+    margin-bottom: 27px;
+}
+
+a {
+    text-decoration: none;
+    color: #BDBDBD;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 17px;
+}
+
+a:hover {
+    color: #369FFF;
+}
+
+.menu {
+    margin-left: 18%;
+}
+
+.icon {
+    margin-right: 31px;
+}
+
+.popup {
+    width: 70%;
+    background-color: #c1e1ff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 33px;
+    margin-top: 15px;
+}
+
+.message {
+    color: #303030;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.goto {
+    color: #369FFF;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
