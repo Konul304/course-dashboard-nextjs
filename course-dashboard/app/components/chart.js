@@ -1,18 +1,12 @@
 'use client';
 import React, { useEffect } from 'react';
 import Chart from 'chart.js/auto';
+import '../css/chart.css'
 
-const ChartComonent = () => {
+
+
+const ChartComonent = ({data}) => {
     useEffect(() => {
-        const data = [
-            { year: 'Mon', count: 30 },
-            { year: 'Tues', count: 20 },
-            { year: "Wed", count: 40 },
-            { year: "Thurs", count: 20 },
-            { year: "Fri", count: 40 },
-            { year: "Sat", count: 20 },
-            { year: "Sun", count: 30 },
-        ];
 
         (async function () {
             let chartStatus = Chart.getChart("myChart");
@@ -25,16 +19,16 @@ const ChartComonent = () => {
                 {
                     type: 'bar',
                     data: {
-                        labels: data.map(row => row.year),
+                        labels: data.map(row => row.week),
                         datasets: [
                             {
                                 label: 'cost',
                                 data: data.map(row => row.count),
-                                backgroundColor: '#F5F6F8',
-                                borderRadius: 8,
+                                backgroundColor: '#d7ecff',
+                                borderRadius: 20,
                                 borderSkipped: false,
                                 barThickness: 34,
-                                hoverBackgroundColor: '#233B82',
+                                hoverBackgroundColor: '#369FFF',
                             }
                         ]
                     },
@@ -43,7 +37,7 @@ const ChartComonent = () => {
                         responsive: true,
                         scales: {
                             y: {
-                                display:false,
+                                display: false,
                                 grid: {
                                     color: '#F5F6F8',
                                 },
