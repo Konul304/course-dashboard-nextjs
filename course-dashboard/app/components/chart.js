@@ -3,8 +3,6 @@ import React, { useEffect } from 'react';
 import Chart from 'chart.js/auto';
 import '../css/chart.css'
 
-
-
 const ChartComonent = ({data}) => {
     useEffect(() => {
 
@@ -27,7 +25,7 @@ const ChartComonent = ({data}) => {
                                 backgroundColor: '#d7ecff',
                                 borderRadius: 20,
                                 borderSkipped: false,
-                                barThickness: 34,
+                                barThickness: 28,
                                 hoverBackgroundColor: '#369FFF',
                             }
                         ]
