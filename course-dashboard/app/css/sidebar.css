@@ -4,6 +4,7 @@
     width: 15.5%;
     border-right: 2px solid #F0F0F0;
     height: 100vh;
+    position: fixed;
 }
 
 .logo {
@@ -16,7 +17,7 @@
     width: 147px;
     height: 155px;
     margin-left: 42px;
-    margin-top: 33px;
+    margin-top: 35px;
     margin-bottom: 30px;
 }
 
@@ -46,11 +47,11 @@ a:hover {
 .popup {
     width: 72%;
     height: 106px;
-    background-color: #c1e1ff;
+    background-color: #c9e7ff;
     border-radius: 15px;
     padding: 20px;
     margin-left: 33px;
-    margin-top: 15px;
+    margin-top: 24px;
 }
 
 .message {
@@ -82,11 +83,13 @@ a:hover {
     border-radius: 10px;
 }
 
-.arrowBox:hover{
-    background-color: #8ac4fa;
+.arrowBox:hover {
+    cursor: pointer;
+    background-color: #9ccbf8;
+    border: none;
 }
 
 .arrow {
     position: absolute;
-    top: 29%;
+    top: 32%;
 }
