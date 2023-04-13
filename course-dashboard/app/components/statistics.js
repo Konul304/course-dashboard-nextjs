@@ -8,7 +8,7 @@ const Statistics = () => {
         <>
             <div className='statistics_container'>
                 <p>Statistics</p>
-                <div className='d-flex flex-wrap'>
+                <div className='d-flex'>
                     <div className='flexbox flexbox1 top'>
                         <span>Courses <br />Completed</span>
                         <div className='d-flex justify-content-between align-items-baseline mt-2'>
@@ -33,6 +33,8 @@ const Statistics = () => {
                             <p className='data'>250</p>
                         </div>
                     </div>
+                </div>
+                <div className='d-flex'>
                     <div className='flexbox'>
                         <span>Courses <br />In Progress</span>
                         <div className='d-flex justify-content-between align-items-baseline mt-2'>
@@ -57,8 +59,8 @@ const Statistics = () => {
                             <p className='data'>05</p>
                         </div>
                     </div>
-                </div>
             </div>
+        </div >
         </>
     );
 }

@@ -2,14 +2,14 @@
 
 .sidebar {
     width: 15.5%;
+    height: 100%;
     border-right: 2px solid #F0F0F0;
-    height: 100vh;
-    position: fixed;
+    position: absolute;
 }
 
 .logo {
     margin-left: 25%;
-    margin-top: 32px;
+    margin-top: 28px;
     margin-bottom: 25%;
 }
 
