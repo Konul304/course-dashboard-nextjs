@@ -13,7 +13,7 @@ const RightMenu = () => {
         <>
             <div className='container_main'>
                 <div className='d-flex justify-content-between align-items-center'>
-                    <Image className=''
+                    <Image className='notif'
                         src={notif}
                         alt="Picture of the author"
                         width="25px"
