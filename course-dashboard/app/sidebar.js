@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Logo from "../public/images/logo.svg"
 import girlImg from "../public/images/girlImg.svg"
 import './css/sidebar.css'
-import Menu from './menu';
+import Menu from './components/menu';
 import arrow from "../public/images/arrow.svg"
 
 const Sidebar = () => {
