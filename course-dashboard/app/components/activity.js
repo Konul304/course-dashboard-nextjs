@@ -1,5 +1,6 @@
 import React from 'react';
 import "../css/activity.css"
+import Chart from './chart';
 
 const Activity = () => {
     return (
@@ -13,6 +14,7 @@ const Activity = () => {
                         <p>Month</p>
                     </div>
                 </div>
+                <Chart/>
             </div>
         </>
     );
