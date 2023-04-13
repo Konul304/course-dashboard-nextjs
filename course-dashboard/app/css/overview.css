@@ -1,0 +1,42 @@
+.overview_container {
+    width: 46%;
+    position: absolute;
+    margin-left: 18.6%;
+    margin-top: 38px;
+}
+
+.overview_container>p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #369FFF;
+}
+
+.heading>p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #303030;
+}
+
+.heading>a {
+    color: #369FFF;
+}
+
+input {
+    width: 65px;
+    border: none;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+}
