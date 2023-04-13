@@ -1,8 +1,23 @@
-.activity_container>p {
+.heading {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     color: #303030;
+}
+
+.tabs p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    color: #BDBDBD;
+}
+
+.tabs p:hover{
+    cursor: pointer;
+    color: #369FFF;
 }
