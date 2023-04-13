@@ -1,11 +1,11 @@
 import React from 'react';
-import "../css/course.css"
+import "../css/resources.css"
 
 const Page = () => {
     return (
         <>
-            <div className='course_container'>
-                Course
+            <div className='resources_container'>
+                Resources
             </div>
         </>
     );

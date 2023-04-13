@@ -19,19 +19,19 @@ const Menu = () => {
                     <p>Overview</p>
                     {router.pathname === '/overview' && <FontAwesomeIcon icon={faCircle} className='dot ms-4' size='xs' />}
                 </Link>
-                <Link href='/overview' className='d-flex align-items-baseline'>
+                <Link href='/course' className='d-flex align-items-baseline'>
                     <FontAwesomeIcon icon={faLayerGroup} className='icon' />
                     <p>Course</p>
                 </Link>
-                <Link href='/overview' className='d-flex align-items-baseline'>
+                <Link href='/resources' className='d-flex align-items-baseline'>
                     <FontAwesomeIcon icon={faFolder} className='icon' />
                     <p>Resources</p>
                 </Link>
-                <Link href='/overview' className='d-flex align-items-baseline'>
+                <Link href='/message' className='d-flex align-items-baseline'>
                     <FontAwesomeIcon icon={faCommentDots} className='icon' />
                     <p>Message</p>
                 </Link>
-                <Link href='/overview' className='d-flex align-items-baseline mb-0'>
+                <Link href='/setting' className='d-flex align-items-baseline mb-0'>
                     <FontAwesomeIcon icon={faGear} className='icon' />
                     <p>Setting</p>
                 </Link>
