@@ -6,31 +6,41 @@ import ChartComponent from './chart';
 
 const Activity = () => {
     const data1 = [
-        { week: 'Mon', count: 40 },
-        { week: 'Tues', count: 20 },
-        { week: "Wed", count: 30 },
-        { week: "Thurs", count: 50 },
-        { week: "Fri", count: 30 },
-        { week: "Sat", count: 50 },
-        { week: "Sun", count: 40 },
+        { week: 'W1', count: 40 },
+        { week: 'W2', count: 20 },
+        { week: "W3", count: 30 },
+        { week: "W4", count: 50 },
+        // { week: "W5", count: 30 },
+        // { week: "W6", count: 50 },
+        // { week: "W7", count: 40 },
     ];
 
     const data2 = [
-        { week: 'Jan', count: 40 },
-        { week: 'Feb', count: 20 },
-        { week: "Mar", count: 30 },
-        { week: "Apr", count: 50 },
-        { week: "May", count: 30 },
-        { week: "June", count: 50 },
-        { week: "July", count: 40 },
-        { week: "Aug", count: 40 },
-        { week: "Sep", count: 50 },
-        { week: "Okt", count: 30 },
-        { week: "Nov", count: 20 },
-        { week: "Dec", count: 50 },
+        { week: 'M1', count: 40 },
+        { week: 'M2', count: 20 },
+        { week: "M3", count: 30 },
+        { week: "M4", count: 50 },
+        { week: "M5", count: 30 },
+        { week: "M6", count: 50 },
+        { week: "M7", count: 40 },
+        { week: "M8", count: 40 },
+        { week: "M9", count: 50 },
+        { week: "M10", count: 30 },
+        { week: "M11", count: 20 },
+        { week: "M12", count: 50 },
     ];
 
-    const [activeTab, setActiveTab] = useState('week');
+    const data3 = [
+        { week: 'D1', count: 40 },
+        { week: 'D2', count: 20 },
+        { week: "D3", count: 30 },
+        { week: "D4", count: 50 },
+        { week: "D5", count: 30 },
+        { week: "D6", count: 50 },
+        { week: "D7", count: 40 },
+    ];
+
+    const [activeTab, setActiveTab] = useState('day');
     const [yearData, setYearData] = useState(data2);
 
     const handleTabClick = (tab) => {
@@ -42,7 +52,7 @@ const Activity = () => {
             setYearData(data1);
         }
         else{
-            setYearData([]);
+            setYearData(data3);
         }
     };
 
@@ -59,6 +69,7 @@ const Activity = () => {
                 </div>
                 {activeTab === 'month' && <ChartComponent data={yearData} />}
                 {activeTab === 'week' && <ChartComponent data={data1} />}
+                {activeTab === 'day' && <ChartComponent data={data3} />}
             </div>
         </>
     );
