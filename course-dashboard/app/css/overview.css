@@ -40,3 +40,17 @@ input {
 input:focus {
     outline: none;
 }
+
+.calendar p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #369FFF;
+}
+
+.calendar p:hover,
+.calendarImg:hover {
+    cursor: pointer;
+}

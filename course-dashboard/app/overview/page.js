@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import search from "../../public/images/search.svg"
 import MyCourses from '../components/myCourses';
+import Planning from '../components/planning';
 
 const Overview = () => {
 
@@ -25,6 +26,7 @@ const Overview = () => {
                     </div>
                 </div>
                 <MyCourses/>
+                <Planning/>
             </div>
         </>
     );
