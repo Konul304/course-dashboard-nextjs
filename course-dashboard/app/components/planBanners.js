@@ -17,11 +17,11 @@ const PlanBanners = () => {
                             <div className='div1 d-flex justify-content-center align-items-center me-3'>
                                 <Image className='img' src={iconBook} alt='book icon' />
                             </div>
-                            <div className='me-5'>
+                            <div >
                                 <span className='text1'>Reading - Beginner Topic 1</span><br />
                                 <span className='text2'>8:00 AM - 10:00 AM</span>
                             </div>
-                            <Image src={dotsMenu} alt='menu' />
+                            <Image className='dots' src={dotsMenu} alt='menu' />
                         </div>
                     </div>
                     <div className='banner'>
@@ -29,11 +29,11 @@ const PlanBanners = () => {
                             <div className='div2 d-flex justify-content-center align-items-center me-3'>
                                 <Image className='img' src={iconHeadphone} alt='book icon' />
                             </div>
-                            <div className='me-5'>
-                                <span className='text1'>Reading - Beginner Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 10:00 AM</span>
+                            <div>
+                                <span className='text1'>Listening - Intermediate Topic 1</span><br />
+                                <span className='text2'>03:00 PM - 04:00 PM</span>
                             </div>
-                            <Image  src={dotsMenu} alt='menu' />
+                            <Image className='dots'  src={dotsMenu} alt='menu' />
                         </div>
                     </div>
                     <div className='banner'>
@@ -41,11 +41,11 @@ const PlanBanners = () => {
                             <div className='div3 d-flex justify-content-center align-items-center me-3'>
                                 <Image className='img' src={iconVolume} alt='book icon' />
                             </div>
-                            <div className='me-5'>
-                                <span className='text1'>Reading - Beginner Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 10:00 AM</span>
+                            <div>
+                                <span className='text1'>Speaking - Beginner Topic 1</span><br />
+                                <span className='text2'>8:00 AM - 12:00 PM</span>
                             </div>
-                            <Image src={dotsMenu} alt='menu' />
+                            <Image className='dots' src={dotsMenu} alt='menu' />
                         </div>
                     </div>
                     <div className='banner'>
@@ -53,25 +53,25 @@ const PlanBanners = () => {
                             <div className='div4 d-flex justify-content-center align-items-center me-3'>
                                 <Image className='img' src={iconPen} alt='book icon' />
                             </div>
-                            <div className='me-5'>
-                                <span className='text1'>Reading - Beginner Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 10:00 AM</span>
+                            <div>
+                                <span className='text1'>Grammar - Intermediate Topic 2</span><br />
+                                <span className='text2'>8:00 AM - 12:00 PM</span>
                             </div>
-                            <Image src={dotsMenu} alt='menu' />
+                            <Image className='dots' src={dotsMenu} alt='menu' />
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className='col2'>
                     <div className='banner'>
                         <div className='d-flex align-items-center'>
                             <div className='div5 d-flex justify-content-center align-items-center me-3'>
                                 <Image className='img' src={iconPen} alt='book icon' />
                             </div>
-                            <div className='me-5'>
+                            <div >
                                 <span className='text1'>Reading - Beginner Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 10:00 AM</span>
+                                <span className='text2'>01:00 PM - 02:00 PM</span>
                             </div>
-                            <Image src={dotsMenu} alt='menu' />
+                            <Image className='dots' src={dotsMenu} alt='menu' />
                         </div>
                     </div>
                     <div className='banner'>
@@ -79,11 +79,11 @@ const PlanBanners = () => {
                             <div className='div6 d-flex justify-content-center align-items-center me-3'>
                                 <Image className='img' src={iconVolume} alt='book icon' />
                             </div>
-                            <div className='me-5'>
-                                <span className='text1'>Reading - Beginner Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 10:00 AM</span>
+                            <div>
+                                <span className='text1'>Speaking - Advanced Topic 1</span><br />
+                                <span className='text2'>07:00 PM - 08:00 PM</span>
                             </div>
-                            <Image src={dotsMenu} alt='menu' />
+                            <Image className='dots' src={dotsMenu} alt='menu' />
                         </div>
                     </div>
                     <div className='banner'>
@@ -91,11 +91,11 @@ const PlanBanners = () => {
                             <div className='div7 d-flex justify-content-center align-items-center me-3'>
                                 <Image className='img' src={iconHeadphone} alt='book icon' />
                             </div>
-                            <div className='me-5'>
-                                <span className='text1'>Reading - Beginner Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 10:00 AM</span>
+                            <div>
+                                <span className='text1'>Listening - Beginner Topic 1</span><br />
+                                <span className='text2'>8:00 AM - 12:00 PM</span>
                             </div>
-                            <Image src={dotsMenu} alt='menu' />
+                            <Image className='dots' src={dotsMenu} alt='menu' />
                         </div>
                     </div>
                     <div className='banner'>
@@ -103,11 +103,11 @@ const PlanBanners = () => {
                             <div className='div8 d-flex justify-content-center align-items-center me-3'>
                                 <Image className='img' src={iconBook} alt='book icon' />
                             </div>
-                            <div className='me-5'>
-                                <span className='text1'>Reading - Beginner Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 10:00 AM</span>
+                            <div>
+                                <span className='text1'>Reading - Advanced Topic 1</span><br />
+                                <span className='text2'>8:00 AM - 12:00 PM</span>
                             </div>
-                            <Image src={dotsMenu} alt='menu' />
+                            <Image className='dots' src={dotsMenu} alt='menu' />
                         </div>
                     </div>
                 </div>
