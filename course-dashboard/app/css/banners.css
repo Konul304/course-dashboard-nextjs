@@ -1,0 +1,68 @@
+.banner {
+    width: 98%;
+    border-radius: 20px;
+    padding: 15px 20px;
+    background-color: #F7F7F7;
+    margin-right: 35px;
+    margin-bottom: 25px;
+}
+
+.col1{
+    margin-right: 30px;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8 {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+}
+
+.img{
+    width: 28px;
+    height: 28px;
+}
+
+.div1,
+.div8 {
+    background-color: #d1e6f9;
+}
+
+.div2,
+.div7 {
+    background-color: #e2edd2;
+}
+
+.div3,
+.div6 {
+    background-color: #f9f0d3;
+}
+
+.div4,
+.div5 {
+    background-color: #f9e5d2;
+}
+
+.text1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #303030;
+}
+
+.text2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #BDBDBD;
+}

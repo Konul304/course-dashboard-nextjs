@@ -22,7 +22,7 @@ const Planning = () => {
                     <p className='ms-3'>20 March 2020</p>
                 </div>
             </div>
-            <PlanBanners/>
+            <PlanBanners />
         </>
     );
 }
