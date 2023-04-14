@@ -10,9 +10,6 @@ const Activity = () => {
         { week: 'W2', count: 20 },
         { week: "W3", count: 30 },
         { week: "W4", count: 50 },
-        // { week: "W5", count: 30 },
-        // { week: "W6", count: 50 },
-        // { week: "W7", count: 40 },
     ];
 
     const data2 = [
