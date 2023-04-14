@@ -7,7 +7,6 @@ import MyCourses from '../components/myCourses';
 
 const Overview = () => {
 
-
     return (
         <>
             <div className='overview_container'>
