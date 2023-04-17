@@ -78,6 +78,24 @@
     color: #BDBDBD;
 }
 
+ul{
+    padding:0 ;
+}
+
 ul li{
     list-style: none;
+    padding: 10px;
+}
+
+ul li:hover{
+    background-color: #dad9d9;
+}
+
+.dropMenu{
+    position: absolute;
+    right: 0;
+    top: 53px;
+    z-index: 2;
+    background-color: rgb(234, 230, 230);
+    color: black;
 }

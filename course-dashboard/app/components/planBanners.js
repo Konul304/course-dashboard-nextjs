@@ -1,6 +1,6 @@
 'use client';
-import React, { useState } from 'react';
 import "../css/banners.css"
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import iconBook from "../../public/images/iconBook.svg"
 import iconPen from "../../public/images/iconPen.svg"
@@ -10,10 +10,18 @@ import dotsMenu from "../../public/images/dotsMenu.svg"
 
 function Event({ icon, title, time, bgClassName }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const menuRef = useRef(null);
+
+    function handleClickOutside() {
+        setIsMenuOpen(false);
+    }
+
+    document.body.addEventListener('click', handleClickOutside);
 
     function handleMenuClick() {
         setIsMenuOpen(!isMenuOpen);
     }
+
     return (
         <div className='banner'>
             <div className='d-flex align-items-center'>
@@ -27,19 +35,17 @@ function Event({ icon, title, time, bgClassName }) {
                 <Image className='dots' onClick={handleMenuClick} src={dotsMenu} alt='menu' />
             </div>
             {isMenuOpen && (
-                <div className='menu'>
-                   <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                   </ul>
+                <div className='dropMenu' ref={menuRef}>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
                 </div>
             )}
         </div>
     );
 }
-
-
 
 const PlanBanners = () => {
     return (
