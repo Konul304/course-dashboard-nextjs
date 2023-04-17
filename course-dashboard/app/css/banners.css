@@ -26,14 +26,14 @@
     top: 31px;
 }
 
-.div1,
-.div2,
-.div3,
-.div4,
-.div5,
-.div6,
-.div7,
-.div8 {
+.dots:hover{
+    cursor: pointer;
+}
+
+.bgBlue,
+.bgGreen,
+.bgYellow,
+.bgOrange {
     width: 60px;
     height: 50px;
     border-radius: 12px;
@@ -44,23 +44,19 @@
     height: 28px;
 }
 
-.div1,
-.div8 {
+.bgBlue{
     background-color: #d1e6f9;
 }
 
-.div2,
-.div7 {
+.bgGreen{
     background-color: #e2edd2;
 }
 
-.div3,
-.div6 {
+.bgYellow {
     background-color: #f9f0d3;
 }
 
-.div4,
-.div5 {
+.bgOrange{
     background-color: #f9e5d2;
 }
 
