@@ -82,4 +82,5 @@
     position: absolute;
     bottom: 20px;
     right: 25px;
+    z-index: 2;
 }
