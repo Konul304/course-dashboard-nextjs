@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import "../css/banners.css"
 import Image from 'next/image';
 import iconBook from "../../public/images/iconBook.svg"
@@ -7,109 +8,95 @@ import iconHeadphone from "../../public/images/iconHeadphone.svg"
 import iconVolume from "../../public/images/iconVolume.svg"
 import dotsMenu from "../../public/images/dotsMenu.svg"
 
+function Event({ icon, title, time, bgClassName }) {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    function handleMenuClick() {
+        setIsMenuOpen(!isMenuOpen);
+    }
+    return (
+        <div className='banner'>
+            <div className='d-flex align-items-center'>
+                <div className={`${bgClassName} d-flex justify-content-center align-items-center me-3`}>
+                    <Image className='img' src={icon} alt='book icon' />
+                </div>
+                <div>
+                    <span className='text1'>{title}</span><br />
+                    <span className='text2'>{time}</span>
+                </div>
+                <Image className='dots' onClick={handleMenuClick} src={dotsMenu} alt='menu' />
+            </div>
+            {isMenuOpen && (
+                <div className='menu'>
+                   <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                   </ul>
+                </div>
+            )}
+        </div>
+    );
+}
+
+
+
 const PlanBanners = () => {
     return (
         <>
             <div className='d-flex mt-3'>
                 <div className='col1'>
-                    <div className='banner'>
-                        <div className='d-flex  align-items-center'>
-                            <div className='div1 d-flex justify-content-center align-items-center me-3'>
-                                <Image className='img' src={iconBook} alt='book icon' />
-                            </div>
-                            <div >
-                                <span className='text1'>Reading - Beginner Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 10:00 AM</span>
-                            </div>
-                            <Image className='dots' src={dotsMenu} alt='menu' />
-                        </div>
-                    </div>
-                    <div className='banner'>
-                        <div className='d-flex align-items-center'>
-                            <div className='div2 d-flex justify-content-center align-items-center me-3'>
-                                <Image className='img' src={iconHeadphone} alt='book icon' />
-                            </div>
-                            <div>
-                                <span className='text1'>Listening - Intermediate Topic 1</span><br />
-                                <span className='text2'>03:00 PM - 04:00 PM</span>
-                            </div>
-                            <Image className='dots'  src={dotsMenu} alt='menu' />
-                        </div>
-                    </div>
-                    <div className='banner'>
-                        <div className='d-flex align-items-center'>
-                            <div className='div3 d-flex justify-content-center align-items-center me-3'>
-                                <Image className='img' src={iconVolume} alt='book icon' />
-                            </div>
-                            <div>
-                                <span className='text1'>Speaking - Beginner Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 12:00 PM</span>
-                            </div>
-                            <Image className='dots' src={dotsMenu} alt='menu' />
-                        </div>
-                    </div>
-                    <div className='banner'>
-                        <div className='d-flex align-items-center'>
-                            <div className='div4 d-flex justify-content-center align-items-center me-3'>
-                                <Image className='img' src={iconPen} alt='book icon' />
-                            </div>
-                            <div>
-                                <span className='text1'>Grammar - Intermediate Topic 2</span><br />
-                                <span className='text2'>8:00 AM - 12:00 PM</span>
-                            </div>
-                            <Image className='dots' src={dotsMenu} alt='menu' />
-                        </div>
-                    </div>
+                    <Event
+                        bgClassName={'bgBlue'}
+                        icon={iconBook}
+                        title='Reading - Beginner Topic 1'
+                        time='8:00 AM - 10:00 AM'
+                    />
+                    <Event
+                        bgClassName={'bgGreen'}
+                        icon={iconHeadphone}
+                        title='Listening - Intermediate Topic 1'
+                        time='03:00 PM - 04:00 PM'
+                    />
+                    <Event
+                        bgClassName={'bgYellow'}
+                        icon={iconVolume}
+                        title='Speaking - Beginner Topic 1'
+                        time='8:00 AM - 12:00 PM'
+                    />
+                    <Event
+                        bgClassName={'bgOrange'}
+                        icon={iconPen}
+                        title='Grammar - Intermediate Topic 2'
+                        time='8:00 AM - 12:00 PM'
+                    />
+
                 </div>
                 <div className='col2'>
-                    <div className='banner'>
-                        <div className='d-flex align-items-center'>
-                            <div className='div5 d-flex justify-content-center align-items-center me-3'>
-                                <Image className='img' src={iconPen} alt='book icon' />
-                            </div>
-                            <div >
-                                <span className='text1'>Reading - Beginner Topic 1</span><br />
-                                <span className='text2'>01:00 PM - 02:00 PM</span>
-                            </div>
-                            <Image className='dots' src={dotsMenu} alt='menu' />
-                        </div>
-                    </div>
-                    <div className='banner'>
-                        <div className='d-flex align-items-center'>
-                            <div className='div6 d-flex justify-content-center align-items-center me-3'>
-                                <Image className='img' src={iconVolume} alt='book icon' />
-                            </div>
-                            <div>
-                                <span className='text1'>Speaking - Advanced Topic 1</span><br />
-                                <span className='text2'>07:00 PM - 08:00 PM</span>
-                            </div>
-                            <Image className='dots' src={dotsMenu} alt='menu' />
-                        </div>
-                    </div>
-                    <div className='banner'>
-                        <div className='d-flex align-items-center'>
-                            <div className='div7 d-flex justify-content-center align-items-center me-3'>
-                                <Image className='img' src={iconHeadphone} alt='book icon' />
-                            </div>
-                            <div>
-                                <span className='text1'>Listening - Beginner Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 12:00 PM</span>
-                            </div>
-                            <Image className='dots' src={dotsMenu} alt='menu' />
-                        </div>
-                    </div>
-                    <div className='banner'>
-                        <div className='d-flex align-items-center'>
-                            <div className='div8 d-flex justify-content-center align-items-center me-3'>
-                                <Image className='img' src={iconBook} alt='book icon' />
-                            </div>
-                            <div>
-                                <span className='text1'>Reading - Advanced Topic 1</span><br />
-                                <span className='text2'>8:00 AM - 12:00 PM</span>
-                            </div>
-                            <Image className='dots' src={dotsMenu} alt='menu' />
-                        </div>
-                    </div>
+                    <Event
+                        bgClassName={'bgOrange'}
+                        icon={iconPen}
+                        title='Reading - Beginner Topic 1'
+                        time='8:00 AM - 12:00 PM'
+                    />
+                    <Event
+                        bgClassName={'bgYellow'}
+                        icon={iconVolume}
+                        title='Speaking - Advanced Topic 1'
+                        time='07:00 PM - 08:00 PM'
+                    />
+                    <Event
+                        bgClassName={'bgGreen'}
+                        icon={iconHeadphone}
+                        title='Listening - Beginner Topic 1'
+                        time='8:00 AM - 12:00 PM'
+                    />
+                    <Event
+                        bgClassName={'bgBlue'}
+                        icon={iconBook}
+                        title='Reading - Advanced Topic 1'
+                        time='8:00 AM - 12:00 PM'
+                    />
                 </div>
             </div>
         </>
