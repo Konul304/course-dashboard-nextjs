@@ -5,7 +5,6 @@ import calendar from "../../public/images/calendar.svg"
 import "../css/overview.css"
 import PlanBanners from './planBanners';
 
-
 const Planning = () => {
     return (
         <>

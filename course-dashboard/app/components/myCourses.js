@@ -13,6 +13,7 @@ import paris from "../../public/images/paris.svg"
 import portugese from "../../public/images/portugese.svg"
 import italian from "../../public/images/italian.svg"
 import german from "../../public/images/german.svg"
+import Progress from './progress';
 
 const MyCourses = () => {
     return (
@@ -24,9 +25,8 @@ const MyCourses = () => {
                         <Image className='bottom1' src={bottom1} alt='topShape' />
                         <p>French</p>
                         <span>35 lessons</span>
-
-
                         <Image className='paris' src={paris} alt='topShape' />
+                        <Progress/>
                     </div>
                     <div className='flex flex2'>
                         <Image className='top2 ' src={top2} alt='topShape' />
