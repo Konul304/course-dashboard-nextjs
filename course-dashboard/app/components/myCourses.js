@@ -1,6 +1,6 @@
 'use client';
-import React from 'react';
 import "../css/myCourses.css"
+import React from 'react';
 import Image from 'next/image';
 import top1 from "../../public/images/flex1top.svg"
 import top2 from "../../public/images/top2.svg"
@@ -17,6 +17,7 @@ import german from "../../public/images/german.svg"
 import Progress from 'react-circle-progress-bar'
 
 const MyCourses = () => {
+
     return (
         <>
             <div className='mt-3'>
@@ -33,7 +34,8 @@ const MyCourses = () => {
                                 ballStrokeWidth={4}
                                 strokeWidth={15}
                                 reduction={0}
-                                background={'#006ED3'}
+                                styles={{textColor: 'white'}}
+                                background={'#208bee'}
                                 gradient={[{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]}
                             />
                         </div>
@@ -69,7 +71,7 @@ const MyCourses = () => {
                                 ballStrokeWidth={4}
                                 strokeWidth={15}
                                 reduction={0}
-                                background={'#006838'}
+                                background={'#6eb33d'}
                                 gradient={[{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]}
                             />
                         </div>

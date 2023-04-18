@@ -85,7 +85,7 @@
     z-index: 2;
 }
 
-.progress{
+.progress {
     width: 52px;
     height: 52px;
     background-color: transparent;
@@ -93,4 +93,13 @@
     left: 25px;
     bottom: 20px;
     z-index: 3;
+}
+
+text {
+    font-size: 48px;
+    line-height: 19px;
+    color: white;
+    text-align: center;
+    fill: white;
+    transform: translateY(15px);
 }
