@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import "../css/myCourses.css"
 import Image from 'next/image';
@@ -13,7 +14,7 @@ import paris from "../../public/images/paris.svg"
 import portugese from "../../public/images/portugese.svg"
 import italian from "../../public/images/italian.svg"
 import german from "../../public/images/german.svg"
-import Progress from './progress';
+import Progress from 'react-circle-progress-bar'
 
 const MyCourses = () => {
     return (
@@ -26,7 +27,16 @@ const MyCourses = () => {
                         <p>French</p>
                         <span>35 lessons</span>
                         <Image className='paris' src={paris} alt='topShape' />
-                        <Progress/>
+                        <div className='progress'>
+                            <Progress
+                                progress={75}
+                                ballStrokeWidth={4}
+                                strokeWidth={15}
+                                reduction={0}
+                                background={'#006ED3'}
+                                gradient={[{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]}
+                            />
+                        </div>
                     </div>
                     <div className='flex flex2'>
                         <Image className='top2 ' src={top2} alt='topShape' />
@@ -34,6 +44,16 @@ const MyCourses = () => {
                         <p>Portugese</p>
                         <span>30 lessons</span>
                         <Image className='portugese' src={portugese} alt='topShape' />
+                        <div className='progress'>
+                            <Progress
+                                progress={50}
+                                ballStrokeWidth={4}
+                                strokeWidth={15}
+                                reduction={0}
+                                background={'#FF7E07'}
+                                gradient={[{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]}
+                            />
+                        </div>
                     </div>
                 </div>
                 <div className='d-flex'>
@@ -43,6 +63,16 @@ const MyCourses = () => {
                         <p>Italian</p>
                         <span>20 lessons</span>
                         <Image className='italian' src={italian} alt='topShape' />
+                        <div className='progress'>
+                            <Progress
+                                progress={25}
+                                ballStrokeWidth={4}
+                                strokeWidth={15}
+                                reduction={0}
+                                background={'#006838'}
+                                gradient={[{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]}
+                            />
+                        </div>
                     </div>
                     <div className='flex flex4'>
                         <Image className='top4' src={top4} alt='topShape' />
@@ -50,6 +80,16 @@ const MyCourses = () => {
                         <p>German</p>
                         <span>40 lessons</span>
                         <Image className='german' src={german} alt='topShape' />
+                        <div className='progress'>
+                            <Progress
+                                progress={75}
+                                ballStrokeWidth={4}
+                                strokeWidth={15}
+                                reduction={0}
+                                background={'#FFC000'}
+                                gradient={[{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
