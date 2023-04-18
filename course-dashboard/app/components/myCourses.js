@@ -21,7 +21,7 @@ const MyCourses = () => {
         ballStrokeWidth: 4,
         strokeWidth: 15,
         reduction: 0,
-        gradient: [{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]
+        gradient: [{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }],
     };
 
     return (
@@ -37,8 +37,9 @@ const MyCourses = () => {
                         <div className='progress'>
                             <Progress
                                 progress={75}
+                                startDegree={180}
                                 background={'#208bee'}
-                                styles={{ textColor: 'white' }}
+                                // styles={ {transform: 'rotate(270deg)'} }
                                 {...defaultProgressStyle}
                             />
                         </div>

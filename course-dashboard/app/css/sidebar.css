@@ -10,7 +10,7 @@
 .logo {
     margin-left: 22%;
     margin-top: 28px;
-    margin-bottom: 45%;
+    margin-bottom: 38%;
 }
 
 .girlImg {
@@ -34,6 +34,14 @@ a {
 
 a:hover {
     color: #369FFF;
+}
+
+.dot{
+    color:#369FFF;
+}
+
+.blue{
+    color:#369FFF;
 }
 
 .menu {
