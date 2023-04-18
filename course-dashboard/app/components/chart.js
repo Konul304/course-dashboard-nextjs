@@ -20,7 +20,7 @@ const ChartComonent = ({data}) => {
                         labels: data.map(row => row.week),
                         datasets: [
                             {
-                                label: 'cost',
+                                label: 'lessons',
                                 data: data.map(row => row.count),
                                 backgroundColor: '#d7ecff',
                                 borderRadius: 20,
@@ -60,7 +60,7 @@ const ChartComonent = ({data}) => {
                                 display: false
                             },
                             tooltip: {
-                                enabled: false
+                                enabled: true
                             }
                         }
                     }
