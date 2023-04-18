@@ -2,11 +2,13 @@
 import "../css/banners.css"
 import React, { useState, useRef } from 'react';
 import Image from 'next/image';
-import iconBook from "../../public/images/iconBook.svg"
-import iconPen from "../../public/images/iconPen.svg"
-import iconHeadphone from "../../public/images/iconHeadphone.svg"
-import iconVolume from "../../public/images/iconVolume.svg"
-import dotsMenu from "../../public/images/dotsMenu.svg"
+import {
+    dotsMenu,
+    iconBook,
+    iconHeadphone,
+    iconPen,
+    iconVolume,
+} from "../../public/images/icons.jsx"
 
 function Event({ icon, title, time, bgClassName }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,12 +20,9 @@ function Event({ icon, title, time, bgClassName }) {
 
     document.body.addEventListener('click', handleClickOutside);
 
-    function handleMenuClick() {
-        setIsMenuOpen(!isMenuOpen);
-    }
-
     return (
         <div className='banner'>
+
             <div className='d-flex align-items-center'>
                 <div className={`${bgClassName} d-flex justify-content-center align-items-center me-3`}>
                     <Image className='img' src={icon} alt='book icon' />
@@ -32,7 +31,7 @@ function Event({ icon, title, time, bgClassName }) {
                     <span className='text1'>{title}</span><br />
                     <span className='text2'>{time}</span>
                 </div>
-                <Image className='dots' onClick={handleMenuClick} src={dotsMenu} alt='menu' />
+                <Image className='dots' onClick={() => setIsMenuOpen(!isMenuOpen)} src={dotsMenu} alt='menu' />
             </div>
             {isMenuOpen && (
                 <div className='dropMenu' ref={menuRef}>

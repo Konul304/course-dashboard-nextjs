@@ -37,7 +37,7 @@ const MyCourses = () => {
                         <div className='progress'>
                             <Progress
                                 progress={75}
-                                startDegree={180}
+                                startDegree={0}
                                 background={'#208bee'}
                                 // styles={ {transform: 'rotate(270deg)'} }
                                 {...defaultProgressStyle}
