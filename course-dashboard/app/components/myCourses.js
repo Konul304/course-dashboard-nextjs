@@ -17,6 +17,12 @@ import german from "../../public/images/german.svg"
 import Progress from 'react-circle-progress-bar'
 
 const MyCourses = () => {
+    const defaultProgressStyle = {
+        ballStrokeWidth: 4,
+        strokeWidth: 15,
+        reduction: 0,
+        gradient: [{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]
+    };
 
     return (
         <>
@@ -31,12 +37,9 @@ const MyCourses = () => {
                         <div className='progress'>
                             <Progress
                                 progress={75}
-                                ballStrokeWidth={4}
-                                strokeWidth={15}
-                                reduction={0}
-                                styles={{textColor: 'white'}}
                                 background={'#208bee'}
-                                gradient={[{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]}
+                                styles={{ textColor: 'white' }}
+                                {...defaultProgressStyle}
                             />
                         </div>
                     </div>
@@ -49,11 +52,8 @@ const MyCourses = () => {
                         <div className='progress'>
                             <Progress
                                 progress={50}
-                                ballStrokeWidth={4}
-                                strokeWidth={15}
-                                reduction={0}
                                 background={'#FF7E07'}
-                                gradient={[{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]}
+                                {...defaultProgressStyle}
                             />
                         </div>
                     </div>
@@ -68,11 +68,8 @@ const MyCourses = () => {
                         <div className='progress'>
                             <Progress
                                 progress={25}
-                                ballStrokeWidth={4}
-                                strokeWidth={15}
-                                reduction={0}
                                 background={'#6eb33d'}
-                                gradient={[{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]}
+                                {...defaultProgressStyle}
                             />
                         </div>
                     </div>
@@ -85,11 +82,8 @@ const MyCourses = () => {
                         <div className='progress'>
                             <Progress
                                 progress={75}
-                                ballStrokeWidth={4}
-                                strokeWidth={15}
-                                reduction={0}
                                 background={'#FFC000'}
-                                gradient={[{ stop: 0.0, color: '#FFFFFF' }, { stop: 1, color: '#FFFFFF' }]}
+                                {...defaultProgressStyle}
                             />
                         </div>
                     </div>
