@@ -1,6 +1,6 @@
 import './globals.css'
-import RightMenu from './rightMenu'
-import Sidebar from './sidebar'
+import RightMenu from './components/rightMenu'
+import Sidebar from './components/sidebar'
 
 export default function RootLayout({ children }) {
   return (

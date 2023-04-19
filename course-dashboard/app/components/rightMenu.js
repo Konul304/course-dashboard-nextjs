@@ -1,13 +1,13 @@
 import React from 'react';
-import "./css/rightMenu.css"
+import "../css/rightMenu.css"
 import Image from 'next/image';
 import {
     notif,
     dropdown,
-} from "../public/images/icons.jsx"
-import prof from '../public/images/prof.png'
-import Statistics from './components/statistics';
-import Activity from './components/activity';
+} from "../../public/images/icons.jsx"
+import prof from '../../public/images/prof.png'
+import Statistics from './statistics';
+import Activity from './activity';
 
 const RightMenu = () => {
     return (

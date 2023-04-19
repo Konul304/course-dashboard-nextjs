@@ -1,13 +1,12 @@
 'use client';
 import React from 'react';
-import Image from 'next/image'
 import {
     Logo,
     girlImg,
     arrow
-} from "../public/images/icons.jsx"
-import './css/sidebar.css'
-import Menu from './components/menu';
+} from "../../public/images/icons.jsx"
+import '../css/sidebar.css'
+import Menu from './menu.js';
 
 const Sidebar = () => {
     return (
