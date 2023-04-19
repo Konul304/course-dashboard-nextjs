@@ -42,15 +42,6 @@ const Activity = () => {
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
-        if (tab === 'month') {
-            setYearData(data2);
-        }
-        else if (tab === 'week') {
-            setYearData(data1);
-        }
-        else{
-            setYearData(data3);
-        }
     };
 
     return (
@@ -64,7 +55,7 @@ const Activity = () => {
                         <p className={activeTab === 'month' ? 'active' : ''} onClick={() => handleTabClick('month')}>Month</p>
                     </div>
                 </div>
-                {activeTab === 'month' && <ChartComponent data={yearData} />}
+                {activeTab === 'month' && <ChartComponent data={data2} />}
                 {activeTab === 'week' && <ChartComponent data={data1} />}
                 {activeTab === 'day' && <ChartComponent data={data3} />}
             </div>
