@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/setting.css"
+import "../(css)/setting.css"
 
 const Page = () => {
     return (

@@ -61,11 +61,16 @@ const ChartComonent = ({ data }) => {
                                 display: false
                             },
                             tooltip: {
-                                enabled: true
+                                enabled: true,
+                                backgroundColor: '#ebf6ff',
+                                bodyColor: 'black',
+                                titleColor: 'black',
+                                cornerRadius:12,
+                                padding:10,
                             }
                         }
                     }
-                }
+                },
             );
         })()
     }, []);

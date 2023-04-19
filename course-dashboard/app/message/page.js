@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/message.css"
+import "../(css)/message.css"
 
 const Page = () => {
     return (
