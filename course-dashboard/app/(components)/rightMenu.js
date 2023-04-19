@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/rightMenu.css"
+import "../(css)/rightMenu.css"
 import Image from 'next/image';
 import {
     notif,

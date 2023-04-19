@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import "../css/activity.css"
+import "../(css)/activity.css"
 import { useState } from 'react';
 import ChartComponent from './chart';
 

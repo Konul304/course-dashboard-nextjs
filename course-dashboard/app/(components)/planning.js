@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import {calendar} from "../../public/images/icons.jsx"
-import "../css/overview.css"
+import "../(css)/overview.css"
 import PlanBanners from './planBanners.js';
 
 const Planning = () => {

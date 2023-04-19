@@ -1,5 +1,5 @@
 'use client';
-import "../css/myCourses.css"
+import "../(css)/myCourses.css"
 import React from 'react';
 import {
     top1,

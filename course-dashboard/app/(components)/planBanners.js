@@ -1,5 +1,5 @@
 'use client';
-import "../css/banners.css"
+import "../(css)/banners.css"
 import React, { useState, useRef } from 'react';
 import {
     dotsMenu,

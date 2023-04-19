@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/statistics.css'
+import '../(css)/statistics.css'
 import { line } from "../../public/images/icons.jsx"
 
 const Statistics = () => {

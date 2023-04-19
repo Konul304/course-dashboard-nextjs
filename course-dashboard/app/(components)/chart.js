@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
-import '../css/chart.css'
+import '../(css)/chart.css'
 
 const ChartComonent = ({ data }) => {
     const chartRef = useRef('')

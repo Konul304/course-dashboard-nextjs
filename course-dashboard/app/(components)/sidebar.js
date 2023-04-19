@@ -5,7 +5,7 @@ import {
     girlImg,
     arrow
 } from "../../public/images/icons.jsx"
-import '../css/sidebar.css'
+import '../(css)/sidebar.css'
 import Menu from './menu.js';
 
 const Sidebar = () => {
