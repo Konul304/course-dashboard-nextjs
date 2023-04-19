@@ -1,9 +1,10 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 import '../css/chart.css'
 
-const ChartComonent = ({data}) => {
+const ChartComonent = ({ data }) => {
+    const chartRef = useRef('')
     useEffect(() => {
 
         (async function () {
@@ -13,7 +14,7 @@ const ChartComonent = ({data}) => {
             }
 
             new Chart(
-                document.getElementById('myChart'),
+                chartRef.current,
                 {
                     type: 'bar',
                     data: {
@@ -72,7 +73,7 @@ const ChartComonent = ({data}) => {
     return (
         <>
             <div>
-                <canvas id="myChart"></canvas>
+                <canvas ref={chartRef} id="myChart"></canvas>
             </div>
         </>
     );
