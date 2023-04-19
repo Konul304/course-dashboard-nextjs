@@ -73,7 +73,7 @@ const ChartComonent = ({ data }) => {
     return (
         <>
             <div>
-                <canvas ref={chartRef} id="myChart"></canvas>
+                <canvas ref={chartRef} className='chart'></canvas>
             </div>
         </>
     );
