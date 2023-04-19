@@ -1,6 +1,6 @@
 import React from 'react';
 import "../css/overview.css"
-import HomePage from '../components/homePage';
+import HomePage from '../(components)/homePage';
 
 const Overview = () => {
 
