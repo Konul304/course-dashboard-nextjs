@@ -59,7 +59,7 @@ a:hover {
     border-radius: 15px;
     padding: 20px;
     margin-left: 33px;
-    margin-top: 27px;
+    margin-top: 55px;
 }
 
 .message {
@@ -99,5 +99,5 @@ a:hover {
 
 .arrow {
     position: absolute;
-    top: 32%;
+    top: 5%;
 }

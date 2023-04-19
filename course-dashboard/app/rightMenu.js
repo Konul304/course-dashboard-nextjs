@@ -1,41 +1,32 @@
 import React from 'react';
 import "./css/rightMenu.css"
 import Image from 'next/image';
-import notif from '../public/images/notification.svg'
-import profile from '../public/images/profile.svg'
-import dropdown from '../public/images/dropdown.svg'
+import {
+    notif,
+    dropdown,
+} from "../public/images/icons.jsx"
+import prof from '../public/images/prof.png'
 import Statistics from './components/statistics';
 import Activity from './components/activity';
-
 
 const RightMenu = () => {
     return (
         <>
             <div className='container_main'>
                 <div className='d-flex justify-content-between align-items-center'>
-                    <Image className='notif'
-                        src={notif}
-                        alt="Picture of the author"
-                        width="25px"
-                        height="26px"
-                    />
+                    <div className='notif'>{notif}</div>
                     <div className='profileDiv d-flex align-items-center'>
-                        <Image className=''
-                            src={profile}
+                    <Image className='prof'
+                            src={prof}
                             alt="Picture of the author"
-                            width="40px"
-                            height="40px"
+                            width="14px"
+                            height="8px"
                         />
                         <div className='d-flex flex-column textDiv'>
                             <span className='name'>Bruno Fernandes</span>
                             <span className='plan'>Basic Plan</span>
                         </div>
-                        <Image className='drop'
-                            src={dropdown}
-                            alt="Picture of the author"
-                            width="14px"
-                            height="8px"
-                        />
+                        <div className='drop'>{dropdown}</div>
                     </div>
                 </div>
                 <Statistics />

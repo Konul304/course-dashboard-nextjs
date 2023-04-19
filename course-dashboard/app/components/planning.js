@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import calendar from "../../public/images/calendar.svg"
+import {calendar} from "../../public/images/icons.jsx"
 import "../css/overview.css"
 import PlanBanners from './planBanners';
 
@@ -14,10 +13,7 @@ const Planning = () => {
                     <Link href={'/overview'}>View All</Link>
                 </div>
                 <div className=' calendar d-flex'>
-                    <Image className='calendarImg'
-                        src={calendar}
-                        alt="calendar"
-                    />
+                    <div className='calendarImg'>{calendar}</div>
                     <p className='ms-3'>20 March 2020</p>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 'use client';
 import "../css/banners.css"
 import React, { useState, useRef } from 'react';
-import Image from 'next/image';
 import {
     dotsMenu,
     iconBook,
@@ -25,13 +24,13 @@ function Event({ icon, title, time, bgClassName }) {
 
             <div className='d-flex align-items-center'>
                 <div className={`${bgClassName} d-flex justify-content-center align-items-center me-3`}>
-                    <Image className='img' src={icon} alt='book icon' />
+                    <div className="img">{icon}</div>
                 </div>
                 <div>
                     <span className='text1'>{title}</span><br />
                     <span className='text2'>{time}</span>
                 </div>
-                <Image className='dots' onClick={() => setIsMenuOpen(!isMenuOpen)} src={dotsMenu} alt='menu' />
+                <div className="dots" onClick={() => setIsMenuOpen(!isMenuOpen)}>{dotsMenu}</div>
             </div>
             {isMenuOpen && (
                 <div className='dropMenu' ref={menuRef}>

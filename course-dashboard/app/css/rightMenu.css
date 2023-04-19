@@ -20,6 +20,11 @@
     border-radius: 10px;
 }
 
+.prof{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
 .name {
     font-family: 'Manrope';
     font-style: normal;

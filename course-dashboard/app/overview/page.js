@@ -1,8 +1,7 @@
 import React from 'react';
 import "../css/overview.css"
 import Link from 'next/link';
-import Image from 'next/image';
-import search from "../../public/images/search.svg"
+import {search} from "../../public/images/icons.jsx"
 import MyCourses from '../components/myCourses';
 import Planning from '../components/planning';
 
@@ -18,10 +17,7 @@ const Overview = () => {
                         <Link href={'/overview'}>View All</Link>
                     </div>
                     <div className='d-flex'>
-                        <Image 
-                        src={search}
-                        alt="search"
-                        />
+                      {search}
                         <input className='ms-3' type="text" placeholder='Search...' />
                     </div>
                 </div>
