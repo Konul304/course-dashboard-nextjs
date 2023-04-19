@@ -38,7 +38,6 @@ const Activity = () => {
     ];
 
     const [activeTab, setActiveTab] = useState('day');
-    const [yearData, setYearData] = useState(data2);
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
